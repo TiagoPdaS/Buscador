@@ -25,7 +25,8 @@ function App() {
 
   return (
     <div className="container">
-      <h1 className="title">Buscador de CEP</h1>
+      <div className="box">
+      <h1 className="title">CEP BRASIL</h1>
 
       <div className=" containerInput">
         <input
@@ -36,8 +37,9 @@ function App() {
         />
 
         <button className="buttonSearch" onClick={handleSearch}>
-          <FiSearch size={25} color="#fff" />
+          <FiSearch size={40} color="black"/>
         </button>
+
       </div>
 
       {Object.keys(cep).length > 0 && (
@@ -51,6 +53,7 @@ function App() {
           </span>
         </main>
       )}
+    </div>
     </div>
   );
 }
